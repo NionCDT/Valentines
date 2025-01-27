@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Will chu be my valentine?</h2>
+        
+        <div class="pikachu">
+            <div class="head">
+                <div class="ears left brown"><div class="ears-inside yellow"></div></div>
+                <div class="ears right brown"><div class="ears-inside yellow"></div></div>
+                <div class="face yellow">
+                    <span class="eye left brown"></span>
+                    <span class="eye right brown"></span>
+                    <span class="mouth">3</span>
+                    <span class="cachete left"></span>
+                    <span class="cachete right"></span>
+                </div>
+            </div>
+            <div class="body yellow">
+                <div class="heart"></div>
+                <div class="paw left yellow"></div>
+                <div class="paw right yellow"></div>
+            </div>
+            <div class="leg left yellow-dark"></div>
+            <div class="leg right yellow-dark"></div>
+            <div class="tail yellow-dark"></div>
+        </div>
+
+        <div class="buttons">
+            <a href="envelope.html"><button class="button yes">Yes</button></a>
+            <button class="button no" id="noButton">No</button>
+        </div>
+    </div>
+
+    <script>
+        
+        const noButton = document.getElementById("noButton");
+
+        
+        noButton.addEventListener('click', function() {
+            
+        const currentX = noButton.offsetLeft;
+        const currentY = noButton.offsetTop;
+
+           
+        const randomX = Math.floor(Math.random() * 101) - 50; 
+        const randomY = Math.floor(Math.random() * 101) - 50; 
+
+            
+        noButton.style.position = "absolute";  
+        noButton.style.left = currentX + randomX + "px";
+        noButton.style.top = currentY + randomY + "px";
+    });
+    </script>
+</html>

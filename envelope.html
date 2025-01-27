@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Letter</title>
+    <link rel="stylesheet" href="envelope.css">
+</head>
+<body>
+    <h1>Sweeeeeeet! Please click me!</h1>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear chaychay, </strong>
+                        <p>
+                            It may not be as aesthetic as others, but here's my own way (a developer's way) of asking you for Valentine's Day.
+                            Please message me for further details.
+                        </p>
+                        <br/>
+                            <i><b>Happy Valentine's Day to the one I love most!</b></i>
+                    </br><br/>
+                    <strong><span id="mid">Sincerely, nini. ❤</span></strong>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
